@@ -407,6 +407,61 @@
       </div>
     </section>
 
+    <section id="metrics-used">
+      <h2>Performance Metrics Used</h2>
+      <ol>
+        <li>
+          <strong>Mean Opinion Score (MOS)</strong>:  
+          A subjective metric based on human raters who score the naturalness or intelligibility of audio on a scale from 1 (Bad) to 5 (Excellent) <a href="#ref1">[1]</a>.
+        </li>
+        <li>
+          <strong>Non-Intrusive Speech Quality Assessment (NISQA)</strong>:  
+          A deep learning-based model using CNN and self-attention mechanisms to estimate perceptual quality without a reference signal <a href="#ref2">[2]</a>.
+        </li>
+        <li>
+          <strong>Perceptual Evaluation of Speech Quality (PESQ)</strong>:  
+          An ITU-T standardized objective method that compares a reference and degraded audio signal to quantify perceived speech quality <a href="#ref3">[3]</a>.
+        </li>
+        <li>
+          <strong>Short-Time Objective Intelligibility (STOI)</strong>:  
+          A metric designed to predict speech intelligibility by measuring the correlation between clean and degraded short-time spectral representations <a href="#ref4">[4]</a>.
+        </li>
+        <li>
+          <strong>Signal-to-Noise Ratio (SNR)</strong>:  
+          A traditional objective metric that computes the ratio (in dB) of the signal power to the noise power in an audio waveform <a href="#ref5">[5]</a>.
+        </li>
+        <li>
+          <strong>Mel-Cepstral Distortion (MCD)</strong>:  
+          A measure of the log-spectral distance between the Mel-cepstral coefficients of synthesized and reference signals, often used in TTS evaluation <a href="#ref6">[6]</a>.
+        </li>
+        <li>
+          <strong>Fréchet Audio Distance (FAD)</strong>:  
+          A reference-free perceptual metric based on comparing statistics (mean and covariance) of audio embeddings extracted from a VGGish model <a href="#ref7">[7]</a>.
+        </li>
+        <li>
+          <strong>Pearson Correlation Coefficient (PCC)</strong>:  
+          A statistical measure that evaluates linear correlation between paired Mel-spectrogram frames from synthesized and reference audio <a href="#ref8">[8]</a>.
+        </li>
+        <li>
+          <strong>Mean Spectral Deviation (MSD)</strong>:  
+          An objective metric that calculates the average deviation per frame between the Mel-spectrogram of synthesized and reference audio <a href="#ref9">[9]</a>.
+        </li>
+      </ol>
+    
+      <h3>References</h3>
+      <ol>
+        <li id="ref1">ITU-T Recommendation P.800: <em>Methods for subjective determination of transmission quality</em>, International Telecommunication Union, 1996.</li>
+        <li id="ref2">Mittag, G. & Möller, S. (2020). <em>NISQA: A Deep CNN-Self-Attention Model for Multidimensional Speech Quality Prediction</em>. arXiv:2005.04062.</li>
+        <li id="ref3">ITU-T Recommendation P.862: <em>Perceptual Evaluation of Speech Quality (PESQ)</em>, 2001.</li>
+        <li id="ref4">Taal, C.H., Hendriks, R.C., Heusdens, R., & Jensen, J. (2011). <em>An Algorithm for Intelligibility Prediction of Time–Frequency Weighted Noisy Speech</em>. IEEE Transactions on Audio, Speech, and Language Processing, 19(7), 2125–2136.</li>
+        <li id="ref5">Loizou, P. (2013). <em>Speech Enhancement: Theory and Practice</em>. CRC Press.</li>
+        <li id="ref6">Kubichek, R. (1993). <em>Mel-cepstral distance measure for objective speech quality assessment</em>. In Proceedings of IEEE PACRIM, 125–128.</li>
+        <li id="ref7">Kilgour, K., Clark, R., Simonyan, K., & Sharifi, M. (2019). <em>Fréchet Audio Distance: A Reference-Free Metric for Evaluating Music Enhancement Algorithms</em>. arXiv:1812.08466.</li>
+        <li id="ref8">Benesty, J., Chen, J., & Huang, Y. (2009). <em>Pearson Correlation Coefficient</em>. In: Noise Reduction in Speech Processing. Springer Topics in Signal Processing.</li>
+        <li id="ref9">Self-defined or adapted from spectrogram distance metrics used in recent neural TTS systems. No standardized publication available.</li>
+      </ol>
+    </section>
+
     <!-- Dynamic Metrics Table (with ± std) -->
     <section id="metrics">
       <h2>Metrics Snapshot</h2>
